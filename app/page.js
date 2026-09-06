@@ -90,7 +90,7 @@ export default function LandingPage() {
             </div>
             <div className={styles.heroRow}>
               <span>AI Model</span>
-              <strong>Gemini 2.5 Flash</strong>
+              <strong>{process.env.AI_MODEL || "gemini-2.5-flash"}</strong>
             </div>
             <div className={`${styles.heroRow} ${styles.heroRowLast}`}>
               <span>Output</span>
