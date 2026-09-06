@@ -1,28 +1,20 @@
-import { Geist, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist",
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-plex-mono",
-  display: "swap",
-});
-
 export const metadata = {
-  title: "SSIP — Resume Bullet Strategist",
+  title: "SSIP Bullet Generator",
   description:
-    "Turn the work you actually do into resume bullets. Describe what you did; get three polished, targeted bullets back.",
+    "Turn the work you actually do into executive-ready resume bullets. Built on Erica Rivera's SSIP™ framework.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geist.variable} ${plexMono.variable}`}>
+    <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

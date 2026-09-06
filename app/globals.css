@@ -1,20 +1,21 @@
 :root {
-  --paper: #f5f4ef;
-  --card: #ffffff;
-  --field: #faf9f5;
-  --chip: #f1efe6;
-  --ink: #1b1c18;
-  --slate: #5d6054;
-  --line: #ddd9cc;
-  --marker: #ffd23f;
-  --error-bg: #fbf1ed;
-  --error-border: #e8c8bd;
-  --error-ink: #8a3421;
-  --error-body: #6e4a40;
-  --coach-bg: #fff8e2;
-  --coach-border: #f0e1ab;
-  --font-body: var(--font-geist), system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --nb-yellow:    #FFDE59;
+  --nb-black:     #0A0A0A;
+  --nb-white:     #FFFFFF;
+  --nb-off-white: #F5F4EF;
+  --nb-navy:      #1a2744;
+  --nb-green:     #2D6A4F;
+  --nb-red:       #D62828;
+  --nb-border:    2px solid #0A0A0A;
+  --nb-shadow:    4px 4px 0px #0A0A0A;
+  --nb-shadow-lg: 6px 6px 0px #0A0A0A;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--nb-off-white);
+  color: var(--nb-black);
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
@@ -29,17 +30,13 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--marker);
-  color: var(--ink);
+  background: var(--nb-yellow);
+  color: var(--nb-black);
 }
 
 button,
